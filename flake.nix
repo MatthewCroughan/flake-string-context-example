@@ -1,5 +1,5 @@
 {
-  description = "Example of string contexts to use stuff that you didn't even make a derivation for";
+  description = "Example of string contexts to use stuff that you didn't even make a derivation for.";
 
   inputs =
   {
@@ -13,10 +13,8 @@
     let
       # System types to support.
       supportedSystems = [ "x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin" ];
-
       # Helper function to generate an attrset '{ x86_64-linux = f "x86_64-linux"; ... }'.
       forAllSystems = f: nixpkgs.lib.genAttrs supportedSystems (system: f system);
-
       # Nixpkgs instantiated for supported system types.
       nixpkgsFor = forAllSystems (system: import nixpkgs { inherit system; overlays = [ self.overlay ]; });
     in {
