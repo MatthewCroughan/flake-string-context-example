@@ -1,0 +1,43 @@
+{
+  "nodes": {
+    "dnas": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1558988005,
+        "narHash": "sha256-ocpQQtSU2MZ1OeQuWXmiig/lYybJD4AtdRBCAkJw0ts=",
+        "owner": "gh0stl1ne",
+        "repo": "DNASrep",
+        "rev": "00c6eed33ba47bbc3ecf1155c6738a8c68f84ac0",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "gh0stl1ne",
+        "ref": "00c6eed3",
+        "repo": "DNASrep",
+        "type": "gitlab"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1630330017,
+        "narHash": "sha256-uy/goGkNQkPPf0YZa9t6GWxP9gBAs6AiXOido4fasmE=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "d874a520155a73111f227744672254de0624aae5",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "dnas": "dnas",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
